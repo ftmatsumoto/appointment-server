@@ -11,7 +11,7 @@ const app = express();
 const server = http.createServer(app);
 
 //initialize the WebSocket server instance
-const socket = new WebSocket.Server({ httpServer : server });
+const socket = new WebSocket.Server({ server });
 
 socket.on('connection', (client) => {
 
