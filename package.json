@@ -1,16 +1,22 @@
 {
-  "name": "Appointment Server",
-  "version": "0.1.0",
+  "name": "appointmentserver",
+  "version": "0.0.0",
   "description": "Appointment Server",
   "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ftmatsumoto/appointment-server"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Felipe Matsumoto",
   "license": "MIT",
   "dependencies": {
+    "bluebird": "^3.5.1",
     "express": "^4.16.2",
     "http": "0.0.0",
+    "mysql": "^2.15.0",
     "uws": "^8.14.1"
   }
 }
