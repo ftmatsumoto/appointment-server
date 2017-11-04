@@ -1,5 +1,4 @@
 const sql = require('mysql');
-const credential = require('../credential.js');
 
 let params;
 if (process.env.RDS_HOSTNAME) {
@@ -11,7 +10,7 @@ if (process.env.RDS_HOSTNAME) {
     database : 'appointmentserver'
   };
 } else {
-  params = credential.mysql;
+  params = require('../credential.js').mysql;
 }
 
 const db = sql.createConnection(params);
