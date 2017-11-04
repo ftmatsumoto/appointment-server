@@ -6,8 +6,8 @@ if (process.env.RDS_HOSTNAME) {
     host: process.env.RDS_HOSTNAME,
     user: process.env.RDS_USERNAME,
     password: process.env.RDS_PASSWORD,
-    port: process.env.RDS_PORT,
-    database : 'appointmentserver'
+    database : process.env.RDS_DATABASE
+    // port: process.env.RDS_PORT,
   };
 } else {
   params = require('../credential.js').mysql;
