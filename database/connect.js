@@ -13,7 +13,9 @@ if (process.env.RDS_HOSTNAME) {
   params = require('../credential.js').mysql;
 }
 
-const db = sql.createConnection(params);
-db.connect();
+// const db = sql.createConnection(params);
+// db.connect();
+
+const db = sql.createPool(params);
 
 module.exports = db;
