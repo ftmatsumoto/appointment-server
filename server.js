@@ -6,7 +6,7 @@ const path = require('path');
 const db = require('./database/helper.js');
 const handleRoutes = require('./routes/routes.js');
 
-const app = express().use((req, res) => res.sendFile(path.join(__dirname, 'index.html');));
+const app = express().use((req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 
 //initialize a simple http server
 const server = http.createServer(app);
